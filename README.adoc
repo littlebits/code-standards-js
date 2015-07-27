@@ -1,13 +1,23 @@
 # JavaScript Coding Standards
-
 JavaScript coding standards at littleBits.
+
+
+
+:toc: macro
+:toc-title:
+:toclevels: 99
+toc::[]
+
+
 
 
 ## Installation
 
 ```
-npm install eslint-config-littlebits
+npm install --save eslint-config-littlebits
 ```
+
+
 
 ## About
 
@@ -18,3 +28,21 @@ style that we think optimizes *modernity* and *clarity*.
 All projects by littleBits written in JavaScript should use the ESLint
 configuration found here. Any disagreements should be opened as Github Issues
 on this repo.
+
+
+
+## Setup
+
+To use the ESLint settings found here you must do the following:
+
+. Have ESLint link:http://eslint.org/docs/user-guide/integrations#editors[integrated into your editor of choice].
+. `npm install --save eslint-config-littlebits` into your project.
+. link:http://eslint.org/docs/user-guide/configuring#extending-configuration-files[Apply the config to your project's config]. The short of it is:
+.. Create `.eslintrc` in the root of your project.
+.. Give it the following contents: `extends: littlebits`
+. Profit.
+
+
+## Overriding
+
+If your project has special needs you may apply project-specific overrides as link:http://eslint.org/docs/user-guide/configuring#extending-configuration-files[documented here].
