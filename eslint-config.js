@@ -9,13 +9,14 @@ module.exports = {
     modules: true
   },
   rules: {
-    'generator-star-spacing': [ 2, {
+    'no-var': [1],
+    'generator-star-spacing': [ 1, {
       before: false,
       after: true
     }],
-    'space-in-parens': [ 2, 'never' ],
-    'space-before-blocks': [ 2, 'always' ],
-    'space-in-brackets': [ 2, 'always', {
+    'space-in-parens': [ 1, 'never' ],
+    'space-before-blocks': [ 1, 'always' ],
+    'space-in-brackets': [ 1, 'always', {
        singleValue: false,
        objectsInArrays: false,
        arraysInArrays: false,
@@ -37,7 +38,7 @@ module.exports = {
       capIsNew: false
     }],
     semi: [0],
-    curly: [ 2, 'multi-line' ],
+    curly: [ 1, 'multi-line' ],
     'no-multi-spaces': [2]
   }
 }
