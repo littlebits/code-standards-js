@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/littlebits/js-standards.git"
+    "url": "git+https://github.com/littlebits/code-standards-js.git"
   },
   "keywords": [
     "littlebits",
@@ -22,7 +22,7 @@
   "author": "Jason Kuhrt <jasonkuhrt@me.com> (http://jasonkuhrt.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/littlebits/js-standards/issues"
+    "url": "https://github.com/littlebits/code-standards-js/issues"
   },
-  "homepage": "https://github.com/littlebits/js-standards#readme"
+  "homepage": "https://github.com/littlebits/code-standards-js#readme"
 }
