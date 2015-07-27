@@ -1,8 +1,5 @@
 {
-  "name": "eslint-config-littlebits",
-  "version": "0.0.0",
-  "description": "JavaScript coding standards at littleBits",
-  "main": "eslint-config.js",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,9 +17,12 @@
     "eslintconfig"
   ],
   "author": "Jason Kuhrt <jasonkuhrt@me.com> (http://jasonkuhrt.com/)",
-  "license": "MIT",
+  "name": "eslint-config-littlebits",
+  "homepage": "https://github.com/littlebits/code-standards-js#readme",
+  "version": "0.0.1",
+  "main": "eslint-config.js",
+  "description": "JavaScript coding standards at littleBits",
   "bugs": {
     "url": "https://github.com/littlebits/code-standards-js/issues"
-  },
-  "homepage": "https://github.com/littlebits/code-standards-js#readme"
+  }
 }
