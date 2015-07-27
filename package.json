@@ -15,7 +15,9 @@
     "lint",
     "code",
     "workflow",
-    "team"
+    "team",
+    "eslint",
+    "eslintconfig"
   ],
   "author": "Jason Kuhrt <jasonkuhrt@me.com> (http://jasonkuhrt.com/)",
   "license": "MIT",
