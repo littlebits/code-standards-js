@@ -14,7 +14,7 @@ toc::[]
 ## Installation
 
 ```
-npm install --save eslint-config-littlebits
+npm install --save-dev eslint-config-littlebits
 ```
 
 
