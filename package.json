@@ -19,7 +19,7 @@
   "author": "Jason Kuhrt <jasonkuhrt@me.com> (http://jasonkuhrt.com/)",
   "name": "eslint-config-littlebits",
   "homepage": "https://github.com/littlebits/code-standards-js#readme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "eslint-config.js",
   "description": "JavaScript coding standards at littleBits",
   "bugs": {
