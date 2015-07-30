@@ -37,7 +37,7 @@ module.exports = {
       newIsCap: true,
       capIsNew: false
     }],
-    semi: [0],
+    semi: [ 1, 'never' ],
     curly: [ 1, 'multi-line' ],
     'no-multi-spaces': [2]
   }
