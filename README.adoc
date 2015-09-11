@@ -34,7 +34,7 @@ on this repo.
 
 . Have ESLint link:http://eslint.org/docs/user-guide/integrations#editors[integrated into your editor of choice].
 . Do `npm install --save-dev eslint-config-littlebits` to bring the config into your project.
-. Do `echo 'extends: littlebits' > .eslintrc` to `link:http://eslint.org/docs/user-guide/configuring#extending-configuration-files[apply this config] to your project.
+. Do `echo 'extends: littlebits' > .eslintrc` to link:http://eslint.org/docs/user-guide/configuring#extending-configuration-files[apply this config] to your project.
 
 
 ## Overriding
