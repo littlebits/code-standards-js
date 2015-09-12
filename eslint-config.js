@@ -16,14 +16,16 @@ module.exports = {
     }],
     'space-in-parens': [ 1, 'never' ],
     'space-before-blocks': [ 1, 'always' ],
-    'space-in-brackets': [ 1, 'always', {
-       singleValue: false,
-       objectsInArrays: false,
-       arraysInArrays: false,
-       arraysInObjects: false,
-       objectsInObjects: false,
-       propertyName: false
+    'object-curly-spacing': [ 1, 'always', {
+      objectsInObjects: false,
+      arraysInObjects: false
     }],
+    'array-bracket-spacing': [ 1, 'always', {
+      singleValue: false,
+      objectsInArrays: false,
+      arraysInArrays: false
+    }],
+    'computed-property-spacing': [ 1, 'never' ],
     'no-lonely-if': [2],
     'default-case': [2],
     quotes: [ 1, 'single', 'avoid-escape' ],
