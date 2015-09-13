@@ -1,0 +1,151 @@
+extends:
+  - eslint:recommended
+
+env:
+  node: true
+  mocha: true
+  browser: true
+  es6: true
+
+ecmaFeatures:
+  modules: true
+
+rules:
+
+
+
+  # Disagreements with eslint:recommended
+
+  no-console:
+    # We may revisit this at a later point but the number of false
+    # negatives this creates while developing is too annoying.
+    - 0
+
+
+
+  # Consistentcy
+
+  comma-style:
+    - 1
+    - last
+  yoda:
+    - 1
+    - never
+  dot-location:
+    - 1
+    - property
+  no-void:
+    - 1
+  space-before-function-paren:
+    - 1
+    - always
+  one-var:
+    - 1
+    - uninitialized: always
+      initialized: never
+  arrow-parens:
+    - 1
+    - always
+  arrow-spacing:
+    - 1
+    - before: true
+      after: true
+  space-before-blocks:
+   - 1
+   - always
+  array-bracket-spacing:
+   - 1
+   - always
+   - singleValue: false
+     objectsInArrays: false
+     arraysInArrays: false
+  object-curly-spacing:
+    - 1
+    - always
+    - objectsInObjects: false
+      arraysInObjects: false
+  computed-property-spacing:
+    - 1
+    - never
+  camelcase:
+    - 1
+    - properties: never
+  curly:
+    - 1
+    - multi-line
+  no-multi-spaces:
+    - 1
+  space-in-parens:
+    - 1
+    - never
+  generator-star-spacing:
+    - 1
+    - before: false
+      after: true
+
+
+
+  # Minimize Editing Overhead
+
+  comma-dangle:
+    - 1
+    - always-multiline
+  object-shorthand:
+    - 1
+    - always
+  prefer-template:
+    - 1
+  quotes:
+    - 1
+    - backtick
+  semi:
+    - 1
+    - never
+
+
+
+  # Type / Functional Thinking
+
+  no-implicit-coercion:
+    - 2
+  no-param-reassign:
+    - 2
+    - props: true
+  radix:
+    - 2
+  eqeqeq:
+    - 2
+  no-const-assign:
+    - 2
+  prefer-const:
+    - 1
+  prefer-reflect:
+    - 1
+  prefer-arrow-callback:
+    - 1
+  no-var:
+    - 1
+  default-case:
+    - 2
+
+
+
+  # Sanity / Misc
+
+  no-return-assign:
+    - 2
+    - always
+  no-undef-init:
+    - 1
+  no-lonely-if:
+    - 2
+  no-use-before-define:
+    - 2
+    - nofunc
+  strict:
+    - 1
+    - never
+  new-cap:
+    - 2
+    - newIsCap: true
+      capIsNew: false

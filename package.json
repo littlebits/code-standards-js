@@ -1,6 +1,8 @@
 {
   "license": "MIT",
   "scripts": {
+    "build": "echo 'module.exports = ' > eslint-config.js && js-yaml eslint-config.yaml >> eslint-config.js",
+    "prepublish": "npm run build",
     "postversion": "git push && git push --tags && npm publish"
   },
   "repository": {
@@ -24,5 +26,8 @@
   "description": "JavaScript coding standards at littleBits",
   "bugs": {
     "url": "https://github.com/littlebits/code-standards-js/issues"
+  },
+  "devDependencies": {
+    "js-yaml": "^3.4.2"
   }
 }
