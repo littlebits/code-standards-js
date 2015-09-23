@@ -21,7 +21,7 @@
   "author": "littleBits",
   "name": "eslint-config-littlebits",
   "homepage": "https://github.com/littlebits/code-standards-js#readme",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "eslint-config.js",
   "description": "JavaScript coding standards at littleBits",
   "bugs": {
