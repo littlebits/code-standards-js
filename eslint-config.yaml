@@ -82,6 +82,16 @@ rules:
     - 1
     - before: false
       after: true
+  eol-last:
+    - 1
+  no-trailing-spaces:
+    - 1
+  indent:
+    - 1
+    - 2
+    - SwitchCase: 1
+  no-mixed-spaces-and-tabs:
+    - 1
 
 
 
