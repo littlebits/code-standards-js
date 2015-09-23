@@ -88,6 +88,8 @@ rules:
   # Minimize Editing Overhead
 
   comma-dangle:
+    # Allow but do not force dangling commas. This equates to the least effort
+    # required by the developer.
     - 0
   object-shorthand:
     - 1
