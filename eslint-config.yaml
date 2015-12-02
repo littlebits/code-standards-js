@@ -132,6 +132,8 @@ rules:
     - 1
   prefer-reflect:
     - 1
+    - exceptions:
+        - apply
   prefer-arrow-callback:
     - 1
   no-var:
