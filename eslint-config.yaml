@@ -1,6 +1,9 @@
 extends:
   - eslint:recommended
 
+plugins:
+  - react
+
 env:
   node: true
   mocha: true
@@ -12,6 +15,18 @@ ecmaFeatures:
 
 rules:
 
+  # React Specific Rules
+
+  react/display-name: [1, { acceptTranspilerName: true }]
+  react/jsx-uses-react: [1]
+  react/wrap-multilines: [1]
+  react/sort-comp: [1] # See default settings at blob/master/docs/rules/sort-comp.md
+  react/react-in-jsx-scope: [1]
+  react/prop-types: [1]
+  react/no-direct-mutation-state: [2]
+  react/no-did-update-set-state: [1, allow-in-func]
+  react/no-deprecated: [1]
+  react/jsx-uses-vars: [2]
 
 
   # Disagreements with eslint:recommended
