@@ -35,43 +35,29 @@ rules:
 
   # Disagreements with eslint:recommended
 
-  no-console:
-    # We may revisit this at a later point but the number of false
-    # negatives this creates while developing is too annoying.
-    - 0
+  # We may revisit this at a later point but the number of false
+  # negatives this creates while developing is too annoying.
+  no-console: [0]
 
 
 
   # Consistentcy
 
-  comma-style:
-    - 1
-    - last
-  yoda:
-    - 1
-    - never
-  dot-location:
-    - 1
-    - property
-  no-void:
-    - 1
-  space-before-function-paren:
-    - 1
-    - always
+  comma-style: [1, last]
+  yoda: [1, never]
+  dot-location: [1, property]
+  no-void: [1]
+  space-before-function-paren: [1, always]
   one-var:
     - 1
     - uninitialized: always
       initialized: never
-  arrow-parens:
-    - 1
-    - always
+  arrow-parens: [1, always]
   arrow-spacing:
     - 1
     - before: true
       after: true
-  space-before-blocks:
-   - 1
-   - always
+  space-before-blocks: [1, always]
   array-bracket-spacing:
    - 1
    - always
@@ -83,100 +69,66 @@ rules:
     - always
     - objectsInObjects: false
       arraysInObjects: false
-  computed-property-spacing:
-    - 1
-    - never
+  computed-property-spacing: [1, never]
   camelcase:
     - 1
     - properties: never
-  curly:
-    - 1
-    - multi-line
-  no-multi-spaces:
-    - 1
-  space-in-parens:
-    - 1
-    - never
+  curly: [1, multi-line]
+  no-multi-spaces: [1]
+  space-in-parens: [1, never]
   generator-star-spacing:
     - 1
     - before: false
       after: true
-  eol-last:
-    - 1
-  no-trailing-spaces:
-    - 1
+  eol-last: [1]
+  no-trailing-spaces: [1]
   indent:
     - 1
     - 2
     - SwitchCase: 1
-  no-mixed-spaces-and-tabs:
-    - 1
+  no-mixed-spaces-and-tabs: [1]
 
 
 
   # Minimize Editing Overhead
 
-  comma-dangle:
-    # Allow but do not force dangling commas. This equates to the least effort
-    # required by the developer.
-    - 0
-  object-shorthand:
-    - 1
-    - always
-  prefer-template:
-    - 1
-  quotes:
-    - 1
-    - single
-  semi:
-    - 1
-    - never
+  # Allow but do not force dangling commas. This equates to the least effort
+  # required by the developer.
+  comma-dangle: [0]
+  object-shorthand: [1, always]
+  prefer-template: [1]
+  quotes: [1, single]
+  semi: [1, never]
 
 
 
   # Type / Functional Thinking
 
-  no-implicit-coercion:
-    - 2
+  no-implicit-coercion: [2]
   no-param-reassign:
     - 2
     - props: true
-  radix:
-    - 2
-  eqeqeq:
-    - 2
-  no-const-assign:
-    - 2
-  prefer-const:
-    - 1
+  radix: [2]
+  eqeqeq: [2]
+  no-const-assign: [2]
+  prefer-const: [1]
   prefer-reflect:
     - 1
     - exceptions:
         - apply
-  prefer-arrow-callback:
-    - 1
-  no-var:
-    - 1
-  default-case:
-    - 2
+  prefer-arrow-callback: [1]
+  no-var: [1]
+  default-case: [2]
 
 
 
   # Sanity / Misc
 
-  no-return-assign:
-    - 2
-    - always
-  no-undef-init:
-    - 1
-  no-lonely-if:
-    - 2
-  no-use-before-define:
-    - 2
-    - nofunc
-  strict:
-    - 1
-    - never
+  no-return-assign: [2, always]
+  no-undef-init: [1]
+  no-lonely-if: [2]
+  no-use-before-define: [2, nofunc]
+  strict: [1, never]
   new-cap:
     - 2
     - newIsCap: true
