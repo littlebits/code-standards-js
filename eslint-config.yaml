@@ -30,6 +30,7 @@ rules:
   react/no-did-update-set-state: [1, allow-in-func]
   react/no-deprecated: [1]
   react/jsx-uses-vars: [2]
+  jsx-quotes: [1]
 
 
   # Disagreements with eslint:recommended
