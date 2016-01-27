@@ -32,6 +32,6 @@
   },
   "dependencies": {
     "babel-eslint": "^5.0.0-beta6",
-    "eslint-plugin-react": "^3.15.0"
+    "eslint-plugin-react": "^3.16.1"
   }
 }
