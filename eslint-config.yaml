@@ -97,7 +97,7 @@ rules:
   comma-dangle: [0]
   object-shorthand: [1, always]
   prefer-template: [1]
-  quotes: [1, single]
+  quotes: [1, double]
   semi: [1, never]
 
 
