@@ -132,6 +132,8 @@ rules:
 
   # Sanity / Misc
 
+  no-arrow-condition: [1]
+  no-dupe-class-members: [2]
   no-return-assign: [2, always]
   no-undef-init: [1]
   no-lonely-if: [2]
