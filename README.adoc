@@ -40,3 +40,11 @@ on this repo.
 ## Overriding
 
 If your project has special needs you may apply project-specific overrides as link:http://eslint.org/docs/user-guide/configuring#extending-configuration-files[documented here].
+
+
+
+## Versioning Policy
+
+* If new rules are added then release is considered breaking.
+** Unless the rule can be automatically fixed in which case the change should be considered non-breaking.
+* If new rules are removed then release is considered non-breaking.
