@@ -2,7 +2,7 @@
 :toc-title:
 :toclevels: 99
 
-# ✍ JavaScript Coding Standards
+# JavaScript Coding Standards
 JavaScript coding standards at littleBits.
 
 toc::[]
