@@ -31,7 +31,7 @@
     "js-yaml": "^3.4.2"
   },
   "dependencies": {
-    "babel-eslint": "^5.0.0-beta6",
-    "eslint-plugin-react": "^3.16.1"
+    "babel-eslint": "^6.0.4",
+    "eslint-plugin-react": "^5.0.1"
   }
 }
