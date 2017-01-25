@@ -33,7 +33,7 @@ rules:
   react/self-closing-comp: [warn]
   react/sort-comp: [warn] # See defaults at blob/master/docs/rules/sort-comp.md
   react/sort-prop-types: [warn, { callbacksLast: true, requiredFirst: true }]
-  react/wrap-multilines: [warn]
+  react/jsx-wrap-multilines: [warn]
 
 
 
