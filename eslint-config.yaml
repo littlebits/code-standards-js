@@ -2,8 +2,6 @@ extends:
   - "eslint:recommended"
   - "plugin:react/recommended"
 
-parser: babel-eslint
-
 plugins:
   - react
 
@@ -15,24 +13,28 @@ env:
 
 ecmaFeatures:
   modules: true
+  jsx: true
+
+parserOptions:
+  sourceType: module
 
 rules:
 
   # React/JSX
 
-  jsx-quotes: [1]
-  react/jsx-equals-spacing: [1, "never"]
-  react/jsx-max-props-per-line: [1, { maximum: 3 }]
-  react/jsx-pascal-case: [1]
-  react/jsx-uses-react: [1]
-  react/no-deprecated: [1]
-  react/no-did-update-set-state: [1, allow-in-func]
-  react/prop-types: [1]
-  react/react-in-jsx-scope: [1]
-  react/self-closing-comp: [1]
-  react/sort-comp: [1] # See defaults at blob/master/docs/rules/sort-comp.md
-  react/sort-prop-types: [1, { callbacksLast: true, requiredFirst: true }]
-  react/wrap-multilines: [1]
+  jsx-quotes: [error]
+  react/jsx-equals-spacing: [warn, never]
+  react/jsx-max-props-per-line: [warn, { maximum: 3 }]
+  react/jsx-pascal-case: [warn]
+  react/jsx-uses-react: [warn]
+  react/no-deprecated: [warn]
+  react/no-did-update-set-state: [warn, allow-in-func]
+  react/prop-types: [warn]
+  react/react-in-jsx-scope: [warn]
+  react/self-closing-comp: [warn]
+  react/sort-comp: [warn] # See defaults at blob/master/docs/rules/sort-comp.md
+  react/sort-prop-types: [warn, { callbacksLast: true, requiredFirst: true }]
+  react/wrap-multilines: [warn]
 
 
 
@@ -46,50 +48,47 @@ rules:
 
   # Consistentcy
 
-  comma-style: [1, last]
-  yoda: [1, never]
-  dot-location: [1, property]
-  no-void: [1]
-  space-before-function-paren: [1, always]
+  comma-style: [warn, last]
+  yoda: [warn, never]
+  dot-location: [warn, property]
+  no-void: [warn]
+  space-before-function-paren: [warn, always]
   one-var:
-    - 1
+    - warn
     - uninitialized: always
       initialized: never
-  arrow-parens: [1, always]
-  arrow-spacing:
-    - 1
-    - before: true
-      after: true
-  space-before-blocks: [1, always]
+  arrow-parens: [warn, always]
+  arrow-spacing: [warn, { before: true, after: true }]
+  space-before-blocks: [warn, always]
   array-bracket-spacing:
-   - 1
+   - warn
    - always
    - singleValue: false
      objectsInArrays: false
      arraysInArrays: false
   object-curly-spacing:
-    - 1
+    - warn
     - always
     - objectsInObjects: false
       arraysInObjects: false
-  computed-property-spacing: [1, never]
+  computed-property-spacing: [warn, never]
   camelcase:
-    - 1
+    - warn
     - properties: never
-  curly: [1, multi-line]
-  no-multi-spaces: [1]
-  space-in-parens: [1, never]
+  curly: [warn, multi-line]
+  no-multi-spaces: [warn]
+  space-in-parens: [warn, never]
   generator-star-spacing:
-    - 1
+    - warn
     - before: false
       after: true
-  eol-last: [1]
-  no-trailing-spaces: [1]
+  eol-last: [warn]
+  no-trailing-spaces: [warn]
   indent:
-    - 1
+    - warn
     - 2
     - SwitchCase: 1
-  no-mixed-spaces-and-tabs: [1]
+  no-mixed-spaces-and-tabs: [warn]
 
 
 
@@ -98,42 +97,33 @@ rules:
   # Allow but do not force dangling commas. This equates to the least effort
   # required by the developer.
   comma-dangle: [0]
-  object-shorthand: [1, always]
-  prefer-template: [1]
-  quotes: [1, double]
-  semi: [1, never]
+  object-shorthand: [warn, always]
+  prefer-template: [warn]
+  quotes: [warn, double]
+  semi: [warn, never]
 
 
 
   # Type / Functional Thinking
 
-  no-implicit-coercion: [2]
-  no-param-reassign:
-    - 2
-    - props: true
-  radix: [2]
-  eqeqeq: [2]
-  no-const-assign: [2]
-  prefer-const: [1]
-  prefer-reflect:
-    - 1
-    - exceptions:
-        - apply
-  prefer-arrow-callback: [1]
-  no-var: [1]
-  default-case: [2]
+  no-implicit-coercion: [error]
+  no-param-reassign: [error, { props: true }]
+  radix: [error]
+  eqeqeq: [error]
+  no-const-assign: [error]
+  prefer-const: [warn]
+  prefer-arrow-callback: [warn]
+  no-var: [warn]
+  default-case: [error]
 
 
 
   # Sanity / Misc
 
-  no-dupe-class-members: [2]
-  no-return-assign: [2, always]
-  no-undef-init: [1]
-  no-lonely-if: [2]
-  no-use-before-define: [2, nofunc]
-  strict: [1, never]
-  new-cap:
-    - 2
-    - newIsCap: true
-      capIsNew: false
+  no-dupe-class-members: [error]
+  no-return-assign: [error, always]
+  no-undef-init: [warn]
+  no-lonely-if: [error]
+  no-use-before-define: [error, nofunc]
+  strict: [warn, never]
+  new-cap: [error, { newIsCap: true, capIsNew: false }]
